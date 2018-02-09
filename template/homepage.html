@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %} 瑞士爱尚 | 首页 {% endblock %}
+
+{% block script %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/home.css" %}'/>
+    <link rel="stylesheet" type="text/css" href='{% static "css/slick.css" %}'/>
+    <link rel="stylesheet" type="text/css" href='{% static "css/slick-theme.css" %}'/>
+    <script type="text/javascript" src="{% static "js/slick.min.js" %}"></script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="mySlider">
+        <div class="slide">
+            <div class="bg" style="background-image: url('{% static "image/home_pic_1.jpeg" %}');">
+                <div class="ad1">
+                    <h1 class="ad1_title">呵护您的健康</h1>
+                    <p class="ad1_desc">
+                        AIswiss致力于将健康，至臻，高品质的生活体验带给中国精英家庭。为您提供定制化医疗体检、海外转诊、医美保健等专项服务。为您的健康生活保驾护航。
+                    </p>
+                    <button class="transButton" onclick="javascript:window.location.href='/health_care';">了解更多</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="bg" style="background-image: url('{% static "image/home_pic_1.jpeg" %}');">
+                <div class="home_motto">
+                    <h1 class="motto_title">让我们做的更多</h1>
+                    <p class="motto-desc">
+                        AISwiss集团秉持"爱家人，爱健康，爱生活"的服务理念，在不断进取的过程中，在医疗保健、低龄教育、信托理财、移民置业、海外投资等领域上不断突破。致力于提供最全面最优质的瑞士一手资源，真正的做到"Beyond
+                        Your Expectation"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container aboutUsBlock">
+        <div class="aboutUsImg">
+            <img src="{% static "image/home_pic_4.jpeg" %}">
+        </div>
+        <div class="basicIntro">
+            <div>
+                <span class="big_title">ABOUT US<span class="cn_big_title">关于我们</span></span>
+            </div>
+            <p>
+                瑞士爱尚AISWISS集团创建于2008年，立足瑞士，致力于为中国精英家庭提供最全面的瑞士优势资源及海外个性化服务。集团业务主要分为：爱尚教育及管家服务，爱尚医疗健康服务，爱尚旅游定制服务，爱尚多媒体影音。我们已经为超过1000个中国精英家庭提供专项服务。公司总部设立在著名的风光之城——琉森，公司业务遍及瑞士的每一个城市。公司在提升自我、开拓资源、迭代更新上从未停止前进的脚步。中国游客造访瑞士人次上更是长年保持首位。我们将瑞士卓越品质传递给中国每一个追求高品质生活的精英家庭。
+            </p>
+            <button onclick="javascript:window.location.href='/education';">
+                了解我们更多
+            </button>
+        </div>
+    </div>
+
+    <div class="healthBlock">
+        <div style="text-align: center;padding-top: 100px">
+            <span class="big_title">SWISS HEALTH CARE<span class="cn_big_title">瑞士医疗</span></span>
+        </div>
+
+        <div class="hospitalSlide">
+            <table class="hospital">
+                <tr>
+                    <td class="hospital_image" style="background-image: url('{% static "image/swiz-hos-1.jpg" %}')">
+                    </td>
+                </tr>
+                <tr style="height: 37px;">
+                    <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                        La Source 源泉医院
+                    </td>
+                </tr>
+                <tr style="height: 96px">
+                    <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;letter-spacing: 0.2px;text-align: justify;color: #444446;">
+                        Clinique de La Source，瑞士源泉医院坐落在洛桑市中心，具有瑞士药监局颁发的“Swiss Leading
+                        Hospital”（瑞士顶级医院医院俱乐部成员）证书。424位医生（41家资质诊所）挂靠该医院，100多位专家医生在各自领域都有着极高的声誉和成就。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0; text-align: center;">
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">了解更多</button>
+                    </td>
+                </tr>
+            </table>
+            <table class="hospital">
+                <tr>
+                    <td class="hospital_image" style="background-image: url('{% static "image/swiz-hos-2.jpg" %}')">
+                    </td>
+                </tr>
+                <tr style="height: 37px;">
+                    <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                        Clinique de Montchoisi
+                    </td>
+                </tr>
+                <tr style="height: 96px">
+                    <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;letter-spacing: 0.2px;text-align: justify;color: #444446;">
+                        Clinique de
+                        Montchoisi位于洛桑市中心，所有病房均可尽览日内瓦湖和阿尔卑斯山。顶楼包括一间总统套房和多间宽敞舒适的普通套房。该诊所在五官科，外科整形，抗衰老领域拥有强劲的竞争力。诊所拥有二十多名知名的FMH（瑞士医疗协会）的该领域专家
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0; text-align: center;">
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">了解更多</button>
+                    </td>
+                </tr>
+            </table>
+            <table class="hospital">
+                <tr>
+                    <td class="hospital_image" style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')">
+                    </td>
+                </tr>
+                <tr style="height: 37px;">
+                    <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                        瑞士吉尼列尔医院
+                    </td>
+                </tr>
+                <tr style="height: 96px">
+                    <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;letter-spacing: 0.2px;text-align: justify;color: #444446;">
+                        瑞士吉尼列尔医院被绮丽的风景环绕其中，静谧的日内瓦湖和巍峨的勃朗峰尽收眼底。瑞士吉尼列尔医院拥有专业的外科、内科执业医师团队，以及最先进的医疗技术平台之一，让患者在舒适的就医环境中，享受个性化医疗专业服务。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0; text-align: center;">
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">了解更多</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="container educationBlock">
+
+        <div class="basicIntro">
+            <div>
+                <span class="big_title">SWISS EDUCATION<span class="cn_big_title">瑞士教育</span></span>
+            </div>
+            <p>
+                瑞士国际化的教育由不同文化组成，它接受并适应德，意，法，美的教育体系，而它培养出来的学生受到全球个领军者的青睐。瑞士的富有正是源于瑞士人“教育至上”的观念，以及对知识和细节的敬仰。因而教育和研究一直是瑞士的核心资源，瑞士政府对于教育的投资名列世界第一。瑞士由此取得的成绩斐然：瑞士所有的12所公立大学，全球排名均位居前列。
+            </p>
+            <button onclick="javascript:window.location.href='/education';">
+                了解更多
+            </button>
+        </div>
+        <div class="aboutUsImg">
+            <img src="{% static "image/home_pic_4.jpeg" %}">
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mySlider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                waitForAnimate: false
+            });
+            $('.hospitalSlide').slick({
+                dots: false,
+                arrows: false,
+                infinite: false,
+                speed: 300,
+                initialSlide: 0,
+                centerMode: true,
+                variableWidth: true,
+            });
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.container {
+    width: 1153px;
+    margin: 0 auto;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.header_info {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    border-bottom: #e2e2e2 1px solid;
+    font-size: 12px;
+    color: #333333;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_right, .info_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.header_contact_email, .header_contact_phone, .header_service_time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.glyphicon {
+    padding-right: 10px;
+    color: #999999;
+}
+
+.header_contact_email {
+    padding-right: 34px;
+}
+
+.header_navbar {
+    display: flex;
+    flex-direction: row;
+    height: 67px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav_item {
+    list-style: none;
+    padding-left: 32px;
+    font-size: 14px;
+    color: #737373;
+}
+
+.header_logo img {
+    width: 120px;
+    height: 24px;
+}
+
+.footer {
+    padding-top: 30px;
+    color: #2e2e30;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-top: #e2e2e2 1px solid;
+    padding-top: 82px;
+}
+
+.toc_title {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.toc_link {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer_copyright {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.transButton {
+    background-color: white;
+    border: 1px #f95454 solid;
+    color: #f95454;
+    font-size: 11px;
+    height: 36px;
+    width: 151px;
+    margin-top: 28px;
+}
+
+.transButtonSmall {
+    background-color: white;
+    border: 1px #f95454 solid;
+    color: #f95454;
+    font-size: 13px;
+    height: 36px;
+    width: 110px;
+}

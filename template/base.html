@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href='{% static "css/base.css" %}'/>
+    <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+    {% block script %} {% endblock %}
+</head>
+<body>
+<div class="container header">
+    <div class="header_info">
+        <div class="info_left">
+            <div class="header_service_time">
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                时间：周一至周日 08:00 - 18:00
+            </div>
+        </div>
+        <div class="info_right">
+            <div class="header_contact_email">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                helloworld@gmail.com
+            </div>
+            <div class="header_contact_phone">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                010-80923314
+            </div>
+        </div>
+    </div>
+    <div class="header_navbar">
+        <div class="info_left">
+            <div class="header_logo"><img src='{% static "image/logo.png" %}'></div>
+        </div>
+        <ul class="info_right">
+            <a class="header_nav_item" href="/">首页</a>
+            <a class="header_nav_item" href="/education ">瑞士教育</a>
+            <a class="header_nav_item" href="/health_care">瑞士医疗</a>
+            <a class="header_nav_item" href="/news">新闻中心</a>
+            <a class="header_nav_item" href="/about">关于我们</a>
+        </ul>
+    </div>
+</div>
+{% block content %} {% endblock %}
+<div class="container footer">
+    <div class="footer_content">
+        <div class="header_logo"><img src='{% static "image/logo.png" %}'></div>
+        <div class="toc">
+            <p class="toc_title">瑞士教育</p>
+            <p class="toc_link">瑞士教育介绍</p>
+            <p class="toc_link">我们的服务</p>
+            <p class="toc_link">学校的选择</p>
+        </div>
+        <div>
+            <p class="toc_title">瑞士医疗</p>
+            <p class="toc_link">瑞士医疗概况</p>
+            <p class="toc_link">我们提供的服务</p>
+            <p class="toc_link">医疗项目</p>
+        </div>
+        <div>
+            <p class="toc_title">新闻中心</p>
+            <p class="toc_link">公司新闻</p>
+            <p class="toc_link">行业新闻</p>
+        </div>
+        <div>
+            <p class="toc_title">关于我们</p>
+            <p class="toc_link">公司简介</p>
+            <p class="toc_link">公司环境</p>
+            <p class="toc_link">团队介绍</p>
+            <p class="toc_link">联系我们</p>
+        </div>
+    </div>
+    <div class="footer_copyright">
+        <p class="copyright">Copyright © 2018 Innovation AI Swiss GmbH.</p>
+        <p class="copyright">All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>
