@@ -16,10 +16,18 @@ table, caption, tbody, tfoot, thead, tr, th, td, p {
     background: transparent;
 }
 
-.container {
-    width: 1153px;
-    margin: 0 auto;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+@media (min-width: 1180px) {
+    .container {
+        width: 1180px;
+        margin: 0 auto;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 960px;
+    }
 }
 
 .header_info {
