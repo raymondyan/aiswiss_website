@@ -1,0 +1,300 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %} 瑞士爱尚 | 教育服务 {% endblock %}
+
+{% block script %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/education.css" %}'/>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static "js/jquery.anystretch.min.js" %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="bg" data-stretch="{% static "image/education_banner.jpg" %}">
+        <div class="home_motto">
+            <h1 class="motto_title">教育服务</h1>
+            <p class="motto-desc">
+                AISwiss为中国精英家庭子女量身定制专属院校，并开创瑞士首个教育管家理念，服务范围包括教育，移民，投资置业等相关业务。提供多元化海外管家服务。
+            </p>
+        </div>
+    </div>
+    <div id="swiss_education">
+        <div class="subtitle">
+            教育服务
+        </div>
+        <div class="title">
+            瑞士教育
+        </div>
+        <hr class="title_divide"/>
+        <div class="description">
+            瑞士国际化的教育由不同文化组成，它接受并适应德，意，法，美的教育体系，而它培养出来的学生受到全球各个<br>
+            领军者的青睐。的富有正是源于瑞士人“教育至上”的观念，以及对知识和细节的敬仰。因而教育和研究一直是瑞士的核心资源，<br>
+            瑞士政府对于教育的投资名列世界第一。瑞士由此取得的成绩斐然：瑞士所有的12所公立大学，全球排名均位居前列。从很早开始，世界<br>
+            诸多皇室家庭，就会选择把下一代送去瑞士的私立学校学习良好的礼仪和规矩。全球十大顶尖寄宿制中学中，瑞士独占前九席。<br>
+            现在瑞士的私立学校拥有来自100多个国家的近十万名学生。名流富豪以及跨国公司的上层权力者都已将自己的<br>
+            儿女送到瑞士读书为傲，越来越多的企业家希望孩子学有所成，顺利接班。
+        </div>
+    </div>
+    <div id="swiss_schools">
+        <div class="subtitle">
+            教育服务
+        </div>
+        <div class="title">
+            瑞士学校选择
+        </div>
+        <hr class="title_divide"/>
+        <div class="schools container">
+            <div class="school_blocks">
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            拉格瑞国际学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            1947年， 在瑞士阿尔卑斯的中心地带， 成立了拉格瑞国际小学。 由Mèan家族潜心管理至今， 已经成为全球闻名的国际小初学校。
+                            资深的老师加上最完善的设施让孩子们既能发展个人的兴趣爱好，又学会遵守集体生活的规章制度，在和谐的校园中茁壮成长。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            圣乔治英式学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            圣乔治国际学校于1927年，由两位前英国牛津大学毕业生成立。学校极大的保留了传统英式教育的精髓并结合瑞士国际化的教学理念。学校无论是在生活和学习上，都由英式教育特有的“住宿体制”组建，以此激发学生的健康竞争能力和团队合作精神。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="school_blocks">
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            莱辛美式学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            瑞士莱辛美式学校
+                            (LAS)由Ott家族于1960年创建。在家族的精心管理之下，LAS已经成为蜚声世界的私立寄宿学校。在2005年，为了学校长期的发展，Ott家族组建LAS国际教育发展基金，LAS成为瑞士政府监管的非营利性基金管理和经营的学校。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            卓士阿尔卑斯国际学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            建校超过100周年的阿尔卑斯卓士学校久负全球盛名，坐落在世界最奢华的滑雪独家胜地圣莫里茨附近。全校师生无不遵守"卓士精神"的指导——终生学习、自律、承诺、公平和世界大同的宝贵价值观。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="school_blocks">
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            博苏雷国际学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            博苏雷阿尔卑斯国际寄宿中学，创建于1910年，是瑞士最古老的私人寄宿学校之一。学校实行双语教学，并保持1:4的高师生比，监管严密，有利于学生们更有效地提高自身技能。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            玫瑰山国际学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            瑞士玫瑰山学校创建于1889年，是世界上最著名的寄宿制精英中学之一。学校因其定制化的个性教学与国际化教育理念的完美融合而驰名天下。在鼓励学生取得优异学术成绩的同时，也为学生提供各种各样的锻炼机会，以提升他们的个人能力，培养其无可挑剔的礼仪。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="school_blocks">
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            蒙塔纳国际学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            Max
+                            Husmann博士在1926年开创了蒙塔纳国际学校，旨在培养年轻人的道德感，智慧和强健的体魄，让他们成为世界村里的具有责任感的公民。他坚信，只有在和谐包容的环境下，通过学习并接受不同的文化和语言才能发展国际化的理解力。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <table class="school_unit">
+                    <tr>
+                        <td class="school_image"
+                            style="background-image: url('{% static "image/swiz-hos-3.jpg" %}')"></td>
+                    </tr>
+                    <tr style="height: 37px;">
+                        <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                            莱蒙国际学校
+                        </td>
+                    </tr>
+                    <tr style="height: 96px">
+                        <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;text-align: justify;color: #444446;">
+                            创建于1960
+                            年的莱蒙国际学校，莱蒙国际办学涉及到小学、初中、高中，学历为世界各国所承认，其全球教育网络资源和教学经验为学生创造了一个真正全面发展的学习环境。直到现在，莱蒙国际学校都是联合国工作人员子女的定点学校。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; text-align: center;">
+                            <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                                了解更多
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="service_provide">
+        <div class="subtitle">
+            教育服务
+        </div>
+        <div class="title">
+            我们提供的服务
+        </div>
+        <hr class="title_divide"/>
+        <div class="service_block">
+            <div class="service_row container">
+                <div class="service">
+                    <div class="service_title">
+                        <img src="{% static "image/section1.png" %}">
+                        <span>咨询沟通</span>
+                    </div>
+                    <p>
+                        在前期沟通的过程中，我们通过一下几个阶段：瑞士简介、学生360度测评、“多对一”留学方案制定、学校初步申请和预约、考察前准备、私人助理陪同考察。让家长及学生全面了解瑞士及所选学校。
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="service_title">
+                        <img src="{% static "image/section2.png" %}">
+                        <span>学校申请</span>
+                    </div>
+                    <p>
+                        在学校申请期间，我们根据学生状况进行定制化的申请方案设计，包括：申请方案制定、申请材料准备、入学测试准备、补充材料和才艺展示的准备、私人助理陪同考试、申请过程沟通、申请结果沟通。
+                    </p>
+                </div>
+            </div>
+            <div class="service_row container">
+                <div class="service">
+                    <div class="service_title">
+                        <img src="{% static "image/section3.png" %}">
+                        <span>留学准备</span>
+                    </div>
+                    <p>
+                        在学生申请好学校之后我们会协助学生及家长进行留学前的准备，包括：支付学费、学校信息沟通、签证办理、行程预订、学校相关制度规定介绍、学校学术介绍、学校活动介绍、第二外语入门、学术英语介绍、瑞士生活指导、礼仪文化课程、素质教育和慈善活动介绍等。
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="service_title">
+                        <img src="{% static "image/section4.png" %}">
+                        <span>陪同入读</span>
+                    </div>
+                    <p>
+                        陪同家长和学生前往瑞士办理学校入读的各项手续，如注册、寝室整理、学生卡办理、选课、熟悉校园（包括周边环境、交通、餐饮等）。负责教育顾问、私人助理、翻译、文案记录等工作。以及协助学生和家长办理转学相关的手续，包括前期其它学校的申请、转学及入学安排等。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.bg').anystretch();
+    </script>
+{% endblock %}

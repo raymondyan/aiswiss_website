@@ -41,6 +41,11 @@ table, caption, tbody, tfoot, thead, tr, th, td, p {
     margin: 0;
 }
 
+.header a {
+    text-decoration: none;
+
+}
+
 .header_contact_email, .header_contact_phone, .header_service_time {
     display: flex;
     flex-direction: row;
@@ -90,8 +95,18 @@ table, caption, tbody, tfoot, thead, tr, th, td, p {
     padding-top: 82px;
 }
 
+.toc {
+    display: grid;
+}
+
+.toc a {
+    color: #2e2e30;
+    text-decoration: none;
+}
+
 .toc_title {
     font-size: 18px;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
