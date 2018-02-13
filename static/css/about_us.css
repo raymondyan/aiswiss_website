@@ -54,7 +54,7 @@
 #our_service .description {
     padding-top: 35px;
     padding-bottom: 67px;
-    width: 1000px;
+    width: 70%;
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
@@ -74,7 +74,7 @@
 }
 
 .service {
-    width: 326px;
+    width: 30%;
     text-align: center;
 }
 
@@ -112,7 +112,7 @@
 #company_env .description {
     padding-top: 35px;
     padding-bottom: 67px;
-    width: 1000px;
+    width: 70%;
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
@@ -162,8 +162,8 @@
 }
 
 #our_cert img {
-    width: 1143px;
-    height: 437px;
+    width: 80%;
+    height: 80%;
     margin: 54px auto 128px;
 }
 
@@ -208,7 +208,6 @@
 
 #contact_us .contact_title {
     font-size: 24px;
-    /*text-align: center;*/
     color: #333333;
 }
 
