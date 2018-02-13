@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-{#    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">#}
     <title>{% block title %} {% endblock %}</title>
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
@@ -32,7 +31,7 @@
     </div>
     <div class="header_navbar">
         <div class="info_left">
-            <div class="header_logo"><img src='{% static "image/logo.png" %}'></div>
+            <div class="header_logo"><img onclick="javascript:window.location.href='/';" src='{% static "image/logo.png" %}'></div>
         </div>
         <ul class="info_right">
             <a class="header_nav_item" href="/">首页</a>
@@ -46,7 +45,7 @@
 {% block content %} {% endblock %}
 <div class="container footer">
     <div class="footer_content">
-        <div class="header_logo"><img src='{% static "image/logo.png" %}'></div>
+        <div class="header_logo"><img onclick="javascript:window.location.href='/';" src='{% static "image/logo.png" %}'></div>
         <div class="toc">
             <a class="toc_title" href="/education">瑞士教育</a>
             <a class="toc_link" href="/education#swiss_education">瑞士教育介绍</a>
@@ -65,11 +64,13 @@
             <p class="toc_link">行业新闻</p>
         </div>
         <div class="toc">
-            <p class="toc_title">关于我们</p>
-            <p class="toc_link">公司简介</p>
-            <p class="toc_link">公司环境</p>
-            <p class="toc_link">团队介绍</p>
-            <p class="toc_link">联系我们</p>
+            <a class="toc_title" href="/about">关于我们</a>
+            <a class="toc_link" href="/about#our_service">公司简介</a>
+            <a class="toc_link" href="/about#company_env">公司环境</a>
+            <a class="toc_link" href="/about#our_team">团队介绍</a>
+            <a class="toc_link" href="/about#our_cert">经营资质</a>
+            <a class="toc_link" href="/about#company_letter">公司致辞</a>
+            <a class="toc_link" href="/about#contact_us">联系我们</a>
         </div>
     </div>
     <div class="footer_copyright">

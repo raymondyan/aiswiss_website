@@ -1,0 +1,245 @@
+.bg {
+    height: 570px;
+    width: 100%;
+    background-size: cover;
+}
+
+.home_motto {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+}
+
+.motto_title {
+    font-size: 50px;
+    padding-bottom: 16px;
+}
+
+.motto-desc {
+    width: 51%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.subtitle {
+    padding-top: 100px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: #333333;
+}
+
+.title {
+    padding-top: 12px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+}
+
+.title_divide {
+    height: 1px;
+    width: 30px;
+    background-color: #f95454;
+    margin: 5px auto 0;
+}
+
+#our_service {
+    background-color: white;
+}
+
+#our_service .description {
+    padding-top: 35px;
+    padding-bottom: 67px;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #444446;
+}
+
+.services_blocks {
+    padding-top: 35px;
+    padding-bottom: 70px;
+}
+
+.service_row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.service {
+    width: 326px;
+    text-align: center;
+}
+
+.service .service_img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.service img {
+    width: 100%;
+
+}
+
+.service h1 {
+    padding-top: 25px;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #2e2e30;
+}
+
+.service p {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    color: #6d6d6e;
+}
+
+#company_env {
+    background-color: #f8f8f8;
+}
+
+#company_env .description {
+    padding-top: 35px;
+    padding-bottom: 67px;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #444446;
+}
+
+.team_member {
+    width: 280px;
+    text-align: center;
+}
+
+.team_member img {
+    width: 200px;
+    height: 200px;
+}
+
+.team_member .name {
+    font-size: 20px;
+    color: #333333;
+    padding-top: 20px;
+}
+
+.team_member .position {
+    font-size: 14px;
+    color: #333333;
+    padding-top: 5px;
+}
+
+.team_member .personal_intro {
+    font-size: 14px;
+    text-align: justify;
+    color: #989898;
+    padding-top: 20px;
+}
+
+.team_member_block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#our_cert {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#our_cert img {
+    width: 1143px;
+    height: 437px;
+    margin: 54px auto 128px;
+}
+
+#company_letter {
+    text-align: center;
+}
+
+#company_letter img {
+    width: 105px;
+    height: 105px;
+    border: 2px solid #f95454;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+#company_letter .lead_title {
+    font-size: 17px;
+    color: #f95454;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+#company_letter .letter_title {
+    font-size: 24px;
+    color: #444446;
+    padding-top: 52px;
+}
+
+#company_letter .letter_content {
+    width: 875px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: justify;
+    color: #6b6b6b;
+    padding-top: 32px;
+    padding-bottom: 100px;
+}
+
+#contact_us {
+    background-color: #f8f8f8;
+}
+
+#contact_us .contact_title {
+    font-size: 24px;
+    /*text-align: center;*/
+    color: #333333;
+}
+
+#contact_us .contact_method {
+    font-size: 13px;
+    line-height: 1.77;
+    text-align: left;
+    color: #333333;
+    padding-top: 20px;
+}
+
+#contact_us .qrcode_block {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+#contact_us .qrcode_block img {
+    height: 92px;
+    width: 92px;
+    margin-right: 10px;
+}
+
+#contact_us .contact_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 100px;
+}
+
+#contact_us .right img {
+    width: 463px;
+}

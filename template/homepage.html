@@ -15,7 +15,7 @@
 
     <div class="mySlider">
         <div class="slide">
-            <div class="bg" style="background-image: url('{% static "image/home_pic_1.jpeg" %}');">
+            <div class="bg" style="background-image: url('{% static "image/home_pic_1.png" %}');">
                 <div class="ad1">
                     <h1 class="ad1_title">呵护您的健康</h1>
                     <p class="ad1_desc">
@@ -25,21 +25,21 @@
                 </div>
             </div>
         </div>
-        <div class="slide">
-            <div class="bg" style="background-image: url('{% static "image/home_pic_1.jpeg" %}');">
-                <div class="home_motto">
-                    <h1 class="motto_title">让我们做的更多</h1>
-                    <p class="motto-desc">
-                        AISwiss集团秉持"爱家人，爱健康，爱生活"的服务理念，在不断进取的过程中，在医疗保健、低龄教育、信托理财、移民置业、海外投资等领域上不断突破。致力于提供最全面最优质的瑞士一手资源，真正的做到"Beyond
-                        Your Expectation"</p>
-                </div>
-            </div>
-        </div>
+        {#        <div class="slide">#}
+        {#            <div class="bg" style="background-image: url('{% static "image/home_pic_1.jpeg" %}');">#}
+        {#                <div class="home_motto">#}
+        {#                    <h1 class="motto_title">让我们做的更多</h1>#}
+        {#                    <p class="motto-desc">#}
+        {#                        AISwiss集团秉持"爱家人，爱健康，爱生活"的服务理念，在不断进取的过程中，在医疗保健、低龄教育、信托理财、移民置业、海外投资等领域上不断突破。致力于提供最全面最优质的瑞士一手资源，真正的做到"Beyond#}
+        {#                        Your Expectation"</p>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </div>#}
     </div>
 
     <div class="container aboutUsBlock">
         <div class="aboutUsImg">
-            <img src="{% static "image/home_pic_4.jpeg" %}">
+            <img src="{% static "image/home_pic_4.png" %}">
         </div>
         <div class="basicIntro">
             <div>
@@ -78,7 +78,9 @@
                 </tr>
                 <tr>
                     <td style="padding: 0; text-align: center;">
-                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">了解更多</button>
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                            了解更多
+                        </button>
                     </td>
                 </tr>
             </table>
@@ -100,7 +102,9 @@
                 </tr>
                 <tr>
                     <td style="padding: 0; text-align: center;">
-                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">了解更多</button>
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                            了解更多
+                        </button>
                     </td>
                 </tr>
             </table>
@@ -121,7 +125,81 @@
                 </tr>
                 <tr>
                     <td style="padding: 0; text-align: center;">
-                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">了解更多</button>
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                            了解更多
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <table class="hospital">
+                <tr>
+                    <td class="hospital_image" style="background-image: url('{% static "image/swiz-hos-4.jpg" %}')">
+                    </td>
+                </tr>
+                <tr style="height: 37px;">
+                    <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                        苏黎世湖畔花园诊所
+                    </td>
+                </tr>
+                <tr style="height: 166px">
+                    <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;letter-spacing: 0.2px;text-align: justify;color: #444446;">
+                        创立于 1981 年的瑞士 SGK 医疗中心，位于美丽的瑞士苏黎世湖边，阿尔卑斯山脚，是一家综合性私立医院，专家均拥有 30
+                        年以上的临床经验，为每位前来的贵宾提供全面、个性化治疗方案，享受医院高度专注、私密和舒适的服务，在瑞士各大领域声誉显赫。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0; text-align: center;">
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                            了解更多
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <table class="hospital">
+                <tr>
+                    <td class="hospital_image" style="background-image: url('{% static "image/swiz-hos-5.jpg" %}')">
+                    </td>
+                </tr>
+                <tr style="height: 37px;">
+                    <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                        SHC 瑞士健康中心
+                    </td>
+                </tr>
+                <tr style="height: 166px">
+                    <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;letter-spacing: 0.2px;text-align: justify;color: #444446;">
+                        SHC
+                        瑞士健康中心是瑞士抗衰老领域的顶级机构。瑞士健康中心的保健医师同样全部具备瑞士联邦颁发的从医执照，拥有丰富临床工作经验的医护人员精通多门学科，对人体所有器官相对应的医学科目做到非常专业，以保证在治疗后的观察护理期发挥重要作用。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0; text-align: center;">
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                            了解更多
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <table class="hospital">
+                <tr>
+                    <td class="hospital_image" style="background-image: url('{% static "image/swiz-hos-6.jpg" %}')">
+                    </td>
+                </tr>
+                <tr style="height: 37px;">
+                    <td style="	width: 508px; padding: 20px 0 0;font-size: 26px;text-align: center;color: #2e2e30;">
+                        苏黎世微分子研究中心
+                    </td>
+                </tr>
+                <tr style="height: 166px">
+                    <td style="padding: 28px 20px 40px;font-size: 16px;line-height: 1.5;letter-spacing: 0.2px;text-align: justify;color: #444446;">
+                        The Kusnacht
+                        Practice在生物分子恢复（“Bio-R”）领域做出了开创性的工作。Bio-R是一种创新医学疗法，能纠正我们个人身体和精神中的失衡和不足，能极大地改善我们身体健康和情绪健康。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0; text-align: center;">
+                        <button class="transButtonSmall" onclick="javascript:window.location.href='/health_care';">
+                            了解更多
+                        </button>
                     </td>
                 </tr>
             </table>
@@ -142,7 +220,7 @@
             </button>
         </div>
         <div class="aboutUsImg">
-            <img src="{% static "image/home_pic_4.jpeg" %}">
+            <img src="{% static "image/home_pic_5.png" %}">
         </div>
 
     </div>

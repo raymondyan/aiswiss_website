@@ -94,13 +94,14 @@
 }
 
 .school_image {
-    background-size: 550px 300px;
+    background-size: 100% 300px;
     height: 300px;
     width: 100%;
 }
 
 .service_block {
     padding-top: 92px;
+    padding-bottom: 60px;
 }
 
 .service_row {
