@@ -1,7 +1,8 @@
 .hospital_page {
     display: flex;
     flex-direction: row;
-    padding-top: 50px;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .hospital_list {
@@ -31,7 +32,7 @@
 .hospital_intro {
     width: 80%;
     background-color: #f8f8f8;
-    padding: 80px;
+    padding: 60px;
     text-align: justify;
     color: #333333;
 }
@@ -45,6 +46,14 @@
 .hospital_intro h1 {
     font-size: 28px;
     margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.hospital_intro h2 {
+    font-size: 24px;
+    margin-top: 24px;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 
