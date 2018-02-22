@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %} 瑞士爱尚 | 医院介绍 {% endblock %}
+
+{% block script %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/hospital.css" %}'/>
+{% endblock %}
+
+{% block content %}
+    <div class="container hospital_page">
+        <div class="hospital_list">
+            {% for single_hospital in all_hospitals %}
+                {% if single_hospital.label == hospital.label %}
+                    <a class="active" href="/hospital/{{ single_hospital.label }}">{{ single_hospital.name }}</a>
+                {% else %}
+                    <a href="/hospital/{{ single_hospital.label }}">{{ single_hospital.name }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="hospital_intro">
+            <p class="name">{{ hospital.name }}</p>
+            {{ hospital.introduce | safe }}
+        </div>
+    </div>
+{% endblock %}

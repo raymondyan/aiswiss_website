@@ -10,7 +10,7 @@ def about_us(request):
 
 
 def education(request):
-    return render_to_response('education.html',locals())
+    return render_to_response('education.html', locals())
 
 
 def health(request):

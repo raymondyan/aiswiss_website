@@ -24,7 +24,7 @@ SECRET_KEY = 'r$8$v=o6o(5hw3oqrvc@qe49unk=i-08bivg4((#9+=x!k3b@9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["www.aiswiss.com.cn","111.230.154.216", "127.0.0.1"]
+ALLOWED_HOSTS = ["www.aiswiss.com.cn", "111.230.154.216", "127.0.0.1"]
 
 # Application definition
 
@@ -35,8 +35,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'website'
+    'website',
+    'hospital',
+    'school',
+    'froala_editor'
 ]
+
+FROALA_EDITOR_PLUGINS = ('char_counter', 'font_size', 'fullscreen', 'align', 'link',
+                         'image_manager', 'image', 'paragraph_style', 'paragraph_format', 'lists', 'save')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,13 +60,15 @@ STATIC_PATH = os.path.join(BASE_DIR, 'static')
 
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'template')
 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+FILE_UPLOAD_PATH = os.path.join(MEDIA_ROOT, 'uploads/')
+
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
-
-# MEDIA_URL = '/media/'
-#
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 TEMPLATES = [
     {
