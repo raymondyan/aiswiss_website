@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %} 瑞士爱尚 | 新闻 {% endblock %}
+
+{% block script %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/news_home.css" %}'/>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static "js/jquery.anystretch.min.js" %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="bg" data-stretch="http://p4jgnfdei.bkt.clouddn.com/news_home.png?imageslim">
+        <div class="home_motto">
+            <h1 class="motto_title">让我们做的更多</h1>
+            <p class="motto-desc">
+                致力专业服务 Committed to exclusive business 联合瑞华致力于服务于中国的精英阶层，向这个阶层宣传并推广来自瑞士的医疗和教育等领域的顶级服务。
+            </p>
+        </div>
+    </div>
+    <script>
+        $('.bg').anystretch();
+    </script>
+{% endblock %}

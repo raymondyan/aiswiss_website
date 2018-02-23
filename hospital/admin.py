@@ -4,7 +4,7 @@ from hospital.models import Hospital
 
 
 class HospitalAdmin(admin.ModelAdmin):
-    list_display = ("label", "name")
+    list_display = ("order", "label", "name")
 
 
 admin.site.register(Hospital, HospitalAdmin)
