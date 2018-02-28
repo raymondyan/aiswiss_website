@@ -9,6 +9,6 @@ def show_school(request, label):
     tab = "edu"
     category="school"
     assert isinstance(label, str)
-    all_hospitals = School.objects.all()
+    all_hospitals = School.objects.all().extra(order_by=['order'])
     hospital = School.objects.filter(label__exact=label).first()
     return render_to_response('hospitalAndSchool.html', locals())

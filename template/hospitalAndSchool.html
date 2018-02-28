@@ -13,7 +13,7 @@
         <div class="hospital_list">
             {% for single_hospital in all_hospitals %}
                 {% if single_hospital.label == hospital.label %}
-                    <a class="active" href="/hospital/{{ single_hospital.label }}">{{ single_hospital.name }}</a>
+                    <a class="active">{{ single_hospital.name }}</a>
                 {% else %}
                     <a href="/{{ category }}/{{ single_hospital.label }}">{{ single_hospital.name }}</a>
                 {% endif %}
