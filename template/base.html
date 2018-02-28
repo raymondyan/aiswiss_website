@@ -34,11 +34,11 @@
             <div class="header_logo"><img onclick="javascript:window.location.href='/';" src='http://p4jgnfdei.bkt.clouddn.com/logo.png?imageslim'></div>
         </div>
         <ul class="info_right">
-            <a class="header_nav_item" href="/">首页</a>
-            <a class="header_nav_item" href="/education ">瑞士教育</a>
-            <a class="header_nav_item" href="/health_care">瑞士医疗</a>
-            <a class="header_nav_item" href="/news/0">新闻中心</a>
-            <a class="header_nav_item" href="/about">关于我们</a>
+            <a class="header_nav_item {% if tab == 'index' %} active {% endif %}" href="/">首页</a>
+            <a class="header_nav_item {% if tab == 'edu' %} active {% endif %}" href="/education ">瑞士教育</a>
+            <a class="header_nav_item {% if tab == 'health' %} active {% endif %}" href="/health_care">瑞士医疗</a>
+            <a class="header_nav_item {% if tab == 'news' %} active {% endif %}" href="/news/0">新闻中心</a>
+            <a class="header_nav_item {% if tab == 'us' %} active {% endif %}" href="/about">关于我们</a>
         </ul>
     </div>
 </div>
@@ -59,9 +59,9 @@
             <a class="toc_link" href="/health_care#service_provide">我们提供的服务</a>
         </div>
         <div class="toc">
-            <p class="toc_title">新闻中心</p>
-            <p class="toc_link">公司新闻</p>
-            <p class="toc_link">行业新闻</p>
+            <a class="toc_title" href="/news/0">新闻中心</a>
+            <a class="toc_link" href="/news/1">公司新闻</a>
+            <a class="toc_link" href="/news/2">行业新闻</a>
         </div>
         <div class="toc">
             <a class="toc_title" href="/about">关于我们</a>

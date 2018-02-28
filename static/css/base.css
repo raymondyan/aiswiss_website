@@ -100,6 +100,11 @@ table, caption, tbody, tfoot, thead, tr, th, td, p {
     color: #737373;
 }
 
+.active {
+    font-weight: 600;
+    color: #333333;
+}
+
 .header_logo img {
     width: 120px;
     height: 24px;

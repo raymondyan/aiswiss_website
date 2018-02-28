@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %} 瑞士爱尚 | 新闻 {% endblock %}
+
+{% block script %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/news.css" %}'/>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static "js/jquery.anystretch.min.js" %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="container news_home_page">
+        <div class="news_catalog_list">
+            <a {% if news_type == '0' %} class="active"{% endif %} href="/news/0">所有新闻</a>
+            <a {% if news_type == '1' %} class="active"{% endif %} href="/news/1">公司新闻</a>
+            <a {% if news_type == '2' %} class="active"{% endif %}  href="/news/2">行业新闻</a>
+        </div>
+        <div class="news_detail">
+             <p class="name">{{ detail.title }}</p>
+            <p class="date">{{ detail.updated_at|date:'Y-m-d'  }}</p>
+            {{ detail.content | safe }}
+        </div>
+    </div>
+
+    <script>
+        $('.bg').anystretch();
+    </script>
+{% endblock %}

@@ -19,6 +19,30 @@
             </p>
         </div>
     </div>
+
+    <div class="container news_home_page">
+        <div class="news_catalog_list">
+            <a {% if news_type == '0' %} class="active"{% endif %} href="/news/0">所有新闻</a>
+            <a {% if news_type == '1' %} class="active"{% endif %} href="/news/1">公司新闻</a>
+            <a {% if news_type == '2' %} class="active"{% endif %}  href="/news/2">行业新闻</a>
+        </div>
+        <div class="news_list">
+            {% for single_news in select_news %}
+                <a class="news_item" href="/news/{{ news_type }}/{{ single_news.id }}">
+                    <div>
+                        <div class="news_img"
+                             style="background-image: url({{ media_url }}{{ single_news.feature }})"></div>
+                    </div>
+                    <div style="margin-left:30px;margin-right:5px;">
+                        <h1>{{ single_news.title }}</h1>
+                        <p>{{ single_news.experts }}</p>
+                        <p style="padding-top: 8px;letter-spacing: 1px">{{ single_news.updated_at|date:'Y-m-d' }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
     <script>
         $('.bg').anystretch();
     </script>

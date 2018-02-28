@@ -15,7 +15,7 @@
                 {% if single_hospital.label == hospital.label %}
                     <a class="active" href="/hospital/{{ single_hospital.label }}">{{ single_hospital.name }}</a>
                 {% else %}
-                    <a href="/hospital/{{ single_hospital.label }}">{{ single_hospital.name }}</a>
+                    <a href="/{{ category }}/{{ single_hospital.label }}">{{ single_hospital.name }}</a>
                 {% endif %}
             {% endfor %}
         </div>

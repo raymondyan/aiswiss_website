@@ -11,5 +11,6 @@ urlpatterns = [
                   url(r'^hospital/(.+)/$', show_hospital),
                   url(r'^school/(.+)/$', show_school),
                   url(r'^froala_editor/', include('froala_editor.urls')),
+                  path('news/', include('news.urls')),
                   path('', include('website.urls'))
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

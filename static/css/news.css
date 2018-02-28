@@ -1,18 +1,18 @@
-.hospital_page {
+.news_home_page {
     display: flex;
     flex-direction: row;
     padding-top: 30px;
     margin-bottom: 30px;
 }
 
-.hospital_list {
+.news_catalog_list {
     width: 20%;
     display: flex;
     flex-direction: column;
     padding-top: 40px;
 }
 
-.hospital_list a {
+.news_catalog_list a {
     font-size: 16px;
     line-height: 30px;
     height: 40px;
@@ -20,16 +20,16 @@
     text-decoration: none;
 }
 
-.hospital_list a.active {
+.news_catalog_list a.active {
     color: #f95454;
     font-weight: 600;
 }
 
-.hospital_list a:hover {
+.news_catalog_list a:hover {
     color: #f95454;
 }
 
-.hospital_intro {
+.news_detail {
     width: 80%;
     background-color: #f8f8f8;
     padding: 60px;
@@ -37,39 +37,48 @@
     color: #333333;
 }
 
-.hospital_intro .name {
+.news_detail .name {
     font-size: 30px;
     font-weight: 500;
     text-align: center;
 }
 
-.hospital_intro h1 {
+.news_detail .date {
+    text-align: center;
+    font-size: 16px;
+	font-weight: 300;
+	line-height: 1.0;
+	color: #737373;
+    padding-bottom: 50px;
+}
+
+.news_detail h1 {
     font-size: 22px;
     margin-top: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.hospital_intro h2 {
+.news_detail h2 {
     font-size: 20px;
     margin-top: 24px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.hospital_intro p {
+.news_detail p {
     font-size: 16px;
     line-height: 28px;
     padding-bottom: 15px;
 }
 
-.hospital_intro img {
+.news_detail img {
     width: 90% !important;
     margin-left: 5%;
     padding: 20px 0;
 }
 
-.hospital_intro ol {
+.news_detail ol {
     list-style-type: circle;
     padding: 20px 0 20px 36px;
     font-size: 16px;
