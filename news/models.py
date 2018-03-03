@@ -11,7 +11,7 @@ class News(models.Model):
     )
     title = models.CharField(max_length=30, verbose_name="文章标题", blank=False)
     newsType = models.IntegerField(choices=NEWS_TYPE, verbose_name="文章类型", null=False, blank=False)
-    feature = models.FileField(upload_to='./upload/', default=None)
+    feature = models.FileField(upload_to='./upload/', verbose_name="摘要图", default=None)
     experts = models.TextField(verbose_name="摘要", default="")
     content = FroalaField(verbose_name="文章内容", blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
