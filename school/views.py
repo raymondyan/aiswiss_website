@@ -8,6 +8,7 @@ from school.models import School
 def show_school(request, label):
     tab = "edu"
     category="school"
+    category_cn = "学校"
     assert isinstance(label, str)
     all_hospitals = School.objects.all().extra(order_by=['order'])
     hospital = School.objects.filter(label__exact=label).first()
