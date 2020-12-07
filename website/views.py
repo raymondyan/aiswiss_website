@@ -10,6 +10,8 @@ def about_us(request):
     tab = "us"
     return render_to_response('about_us.html', locals())
 
+def show_1(request):
+    return render_to_response('1.html', locals())
 
 def education(request):
     tab = "edu"
