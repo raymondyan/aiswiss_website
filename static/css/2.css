@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body{
+    background-color: rgb(160, 154, 154);
+}
+.container{
+    width: 25%;
+    margin: 150px auto;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px;
+}
+.container h1{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.container h1 a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    margin: 20px 0;
+    font-size: 10px;
+}
+span{
+   font-size: 18px; 
+   margin: 5px 0;
+   font-weight: 1000;
+}
+footer{
+    font-size: 10px;
+    color: white;
+    background-color: black;
+    height: 20px;
+}
+.two{
+    background-color: rgb(238, 177, 11);
+    margin-top: 5px;
+    width: 100px;
+    height: 5px;
+    float: left;
+}
+.three{
+    background-color: rgb(238, 177, 11);
+    margin-top: 5px;
+    width: 140px;
+    height: 5px;
+    float: left;
+}
