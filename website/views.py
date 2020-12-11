@@ -16,6 +16,9 @@ def show_1(request):
 def show_2(request):
     return render_to_response('2.html', locals())
 
+def show_2s(request):
+    return render_to_response('2s.html', locals())
+
 def education(request):
     tab = "edu"
     return render_to_response('education.html', locals())
